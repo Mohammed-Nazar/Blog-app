@@ -14,7 +14,11 @@ const Post = ({title, body, id}) => {
             <p className="mt-2 text-gray-600">{body.slice(0,body.length > 150? - 100: -50)}...</p>
         </div>
         <div className="flex justify-between items-center mt-4">
-            <Button id={id}/>
+        <Link href={
+        {
+            pathname: `/post/${id}`,
+        }
+    } className="text-blue-600 hover:underline">Read more</Link>
             <div>
                 <a className="flex items-center" href="#">
                     <img className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block" src="https://media.licdn.com/dms/image/D4D03AQGDtyVWUBWtgw/profile-displayphoto-shrink_400_400/0/1710334826803?e=1715817600&v=beta&t=atr6sVvK-u1sCgmKRBGDhE5iyYZLnuMqRKqvYHIOAMI" alt="avatar"/>
