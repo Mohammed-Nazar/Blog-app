@@ -6,7 +6,7 @@ const Comments = async ({ id }) => {
   return (
     <>
       {postComments.map((cm) => {
-        let randImage = Math.floor(Math.random() * 100);
+        let randImage = Math.floor(Math.random() * 50);
         return (
           <div key={cm.id} className="flex flex-col shadow-sm rounded-md  p-5 my-4 lg:my-10 bg-slate-50 lg:w-9/12">
             <p className="inline-flex items-center mr-3 my-5 text-sm text-gray-900font-semibold">
