@@ -9,12 +9,12 @@ const page = async ({ params }) => {
 
   return (
     <>
-      <div className=" px-10 my-4 py-6 bg-white rounded-lg  min-h-screen ">
+      <div className="px-5 lg:px-10 my-4 py-6 bg-white rounded-lg  min-h-screen ">
         <div className="p-8 shadow-md rounded-lg bg-slate-50">
           <div className="mb-10">
             <a className="flex items-center">
               <img
-                className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
+                className="mx-4 w-10 h-10 object-cover rounded-full sm:block"
                 src="https://media.licdn.com/dms/image/D4D03AQGDtyVWUBWtgw/profile-displayphoto-shrink_400_400/0/1710334826803?e=1715817600&v=beta&t=atr6sVvK-u1sCgmKRBGDhE5iyYZLnuMqRKqvYHIOAMI"
                 alt="avatar"
               />
@@ -22,14 +22,14 @@ const page = async ({ params }) => {
             </a>
           </div>
           <div className="mt-5">
-            <h1 className="text-xl text-gray-700 font-bold hover:text-gray-600 w-7/12">
+            <h1 className="lg:text-xl text-gray-700 font-bold hover:text-gray-600 lg:w-7/12">
               {data.title}.
             </h1>
-            <p className="mt-10 text-gray-600 w-7/12 pb-10">{data.body}</p>
+            <p className="mt-10 text-gray-600 lg:w-7/12 pb-10">{data.body}</p>
           </div>
         </div>
 
-        <div className=" px-10 my-4 py-6 bg-white  ">
+        <div className="px-5 lg:px-10 my-4 py-6 bg-white  ">
           <h1 className="text-gray-700 font-bold">Comments</h1>
 
           <Comments id={postId} />

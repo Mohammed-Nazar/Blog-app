@@ -4,12 +4,12 @@ import Link from "next/link"
 const Post = ({title, body, id}) => {
   return (
     <>
-<div className="w-full px-10 my-4 mb-10 py-6 bg-slate-50 rounded-lg shadow-md">
+<div className="w-full px-10 my-4 lg:mb-10 py-6 bg-slate-50 rounded-lg shadow-md">
 
         <div className="mt-2">
             <Link href={{
                 pathname: `/post/${id}`,
-            }} className="text-2xl text-gray-700 font-bold hover:text-gray-600"><sup className="text-[10px]">{id}</sup> {title}</Link>
+            }} className="lg:text-2xl text-gray-700 font-bold hover:text-gray-600"><sup className="text-[10px]">{id}</sup> {title}</Link>
             <p className="mt-2 text-gray-600">{body.slice(0,body.length > 150? - 100: -50)}...</p>
         </div>
         <div className="flex justify-between items-center mt-4">

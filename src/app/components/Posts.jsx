@@ -14,7 +14,7 @@ const Posts = async () => {
     
   return (
     <>
-    <div className="flex flex-col items-center justify-center m-10 lg:mx-40 ">
+    <div className="flex flex-col items-center justify-center m-3 lg:m-10 lg:mx-40 ">
       {posts.map((post)=> <Post key={post.id} title={post.title} body={post.body} id={post.id}  />)}
       </div>
     </>
